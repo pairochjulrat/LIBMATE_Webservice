@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author Administrator
+ * @author Pairoch julrat
  */
 public class  BookClass {
     public List<SubBook> subbooks;
@@ -18,7 +18,7 @@ public class  BookClass {
         this.subbooks = subbooks;
     //this.books.addAll(books);
     }
-
+    
     @Override
     public String toString() {
         StringBuilder b = new StringBuilder();

@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author Pairoch julrat
+ * @author Pairoch julrat Yes
  */
 public class  BookClass {
     public List<SubBook> subbooks;

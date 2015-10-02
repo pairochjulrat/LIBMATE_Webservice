@@ -76,10 +76,11 @@ public class LIBMATE_Webservice {
     Statement stmt = null;
     ResultSet rsult = null;
     String driver = "com.mysql.jdbc.Driver";
-    String url = "jdbc:mysql://localhost:3306/libmate?characterEncoding=tis620";
-    String dbusername = "libmate";
-    String dbpassword = "libmate123?";
-    String uploaded_path = "/var/www/LIBMATE_UPLOADED/";
+    String url = "jdbc:mysql://localhost:3306/libmatedb?characterEncoding=tis620";
+    String dbusername = "libmateadmin";
+    String dbpassword = "libmateAdmin123?";
+    //String uploaded_path = "/var/www/LIBMATE_UPLOADED/";
+    String uploaded_path = "/tmp/LIBMATE_UPLOADED/";
     //String uploaded_path = "c:\\apache\\";
 
     @WebMethod(operationName = "mediaMasterSearch")

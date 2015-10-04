@@ -78,7 +78,7 @@ public class LIBMATE_Webservice {
     String driver = "com.mysql.jdbc.Driver";
     String url = "jdbc:mysql://localhost:3306/libmatedb?characterEncoding=tis620";
     String dbusername = "libmateadmin";
-    String dbpassword = "libmateAdmin123?";
+    String dbpassword = "Admin123?";
     //String uploaded_path = "/var/www/LIBMATE_UPLOADED/";
     String uploaded_path = "/tmp/LIBMATE_UPLOADED/";
     //String uploaded_path = "c:\\apache\\";
@@ -101,7 +101,6 @@ public class LIBMATE_Webservice {
         String shortTopicReturn = "";
         String remarkReturn = "";
         String title2Return = "";
-
 
         String sql_sel = "";
         List<SubMedia> medias = new ArrayList<SubMedia>();
@@ -2327,7 +2326,6 @@ public class LIBMATE_Webservice {
         byte[] p_file = null;
         Blob blob = null; //is our blob object
 
-
         if (!(p_fileBase64.equalsIgnoreCase(""))) {
             try {
                 //p_file = new Base64.decode(p_fileBase64);
@@ -3093,7 +3091,6 @@ public class LIBMATE_Webservice {
                 stmt = con.createStatement();
                 sql_sel = "SELECT * FROM library_daily_walkin order by substring(walkin_date,7,2) desc,substring(walkin_date,4,2) desc,substring(walkin_date,1,2)  desc";
 
-
                 rsult = stmt.executeQuery(sql_sel);
                 while (rsult.next()) {
                     walkinDateReturn = rsult.getString("walkin_date");
@@ -3162,7 +3159,6 @@ public class LIBMATE_Webservice {
                     }
                     //---------------------
 
-
                     con.close();
                 } catch (SQLException ex) {
                     Logger.getLogger(LIBMATE_Webservice.class.getName()).log(Level.SEVERE, null, ex);
@@ -3175,8 +3171,6 @@ public class LIBMATE_Webservice {
         } catch (IOException ex) {
             Logger.getLogger(LIBMATE_Webservice.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-
 
         return addResult;
     }
@@ -3210,7 +3204,6 @@ public class LIBMATE_Webservice {
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(LIBMATE_Webservice.class.getName()).log(Level.SEVERE, null, ex);
         }
-
 
         return userGroupKeyReturn;
     }
